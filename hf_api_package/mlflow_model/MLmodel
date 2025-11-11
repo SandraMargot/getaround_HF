@@ -1,0 +1,29 @@
+flavors:
+  python_function:
+    artifacts:
+      cat_cols:
+        path: artifacts/cat_cols.json
+        uri: /home/sandra/projects/getaround_HF/models/cat_cols.json
+      gb_model:
+        path: artifacts/gb_model.pkl
+        uri: /home/sandra/projects/getaround_HF/models/gb_model.pkl
+      label_encoders:
+        path: artifacts/label_encoders.pkl
+        uri: /home/sandra/projects/getaround_HF/models/label_encoders.pkl
+    cloudpickle_version: 3.1.1
+    code: null
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.11.13
+    streamable: false
+mlflow_version: 2.18.0
+model_size_bytes: 921273
+model_uuid: 674f4643af12488da98bb25cdba07ac3
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: json_object
+utc_time_created: '2025-11-11 05:56:40.636360'
