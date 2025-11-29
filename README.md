@@ -55,6 +55,82 @@ Anyone can use these links — the Space is **public**.
 - Served through FastAPI on Hugging Face  
 
 ---
+## 🧪 Local Setup (Optional)
+
+The easiest way to use this project is through the **online applications** on Hugging Face.  
+Local setup is only needed if you want to run the Streamlit dashboard or the FastAPI API on your own machine.
+
+### Requirements
+- Python 3.10+ installed  
+- `pip` available in your terminal (WSL recommended)
+
+---
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/smargot/getaround_HF.git
+cd getaround_HF
+```
+
+---
+
+### 2. (Optional) Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate it with:
+
+- **Windows PowerShell:**
+  ```bash
+  .venv\Scripts\activate
+  ```
+- **WSL / Linux / macOS:**
+  ```bash
+  source .venv/bin/activate
+  ```
+
+You can skip this step if you prefer to use your global Python environment.
+
+---
+
+### 3. Install the Python dependencies
+
+This project uses standard libraries such as FastAPI, Uvicorn, Streamlit, scikit-learn, MLflow, pandas, and numpy.
+
+```bash
+pip install fastapi uvicorn streamlit scikit-learn mlflow pandas numpy
+```
+
+If some packages are already installed, `pip` will simply reuse them.
+
+---
+
+### 4. Run the Streamlit dashboard
+
+```bash
+streamlit run apps/streamlit/app.py
+```
+
+Open in your browser:  
+**http://localhost:8501**
+
+---
+
+### 5. Run the FastAPI pricing API
+
+In another terminal:
+
+```bash
+uvicorn apps.api.main:app --reload
+```
+
+Open the interactive documentation:  
+**http://localhost:8000/docs**
+
+
 
 ## 🏗️ Repository Structure (simplified)
 
