@@ -33,7 +33,7 @@ Direct API (Swagger UI):
 https://smargot-getaround-api.hf.space/docs  
 
 Endpoints:
-- `GET /` → API status  
+- `GET /` → API status and documentation 
 - `POST /predict` → Predicts rental price from car features  
 
 Anyone can use these links — the Space is **public**.
@@ -150,3 +150,4 @@ notebooks/
   analysis_delay-final.ipynb
   get_around_pricing_analysis.ipynb
   ML_pricing.ipynb
+
